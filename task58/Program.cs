@@ -7,7 +7,7 @@
 // 18 20
 // 15 18
 
-int[,] FillMatrixA(int rowsCount, int columnsCount, int leftRange = 0, int rightRange = 10)
+int[,] FillMatrixA(int rowsCount, int columnsCount, int leftRange = -99, int rightRange = 100)
 {
     int[,] matrixA = new int[rowsCount, columnsCount];
     Random rand = new Random();
@@ -36,7 +36,7 @@ int[,] matrixA = FillMatrixA(2, 2);
 Console.WriteLine("Первая матрица:");
 PrintMatrixA(matrixA);
 
-int[,] FillMatrixB(int rowsCount, int columnsCount, int leftRange = 0, int rightRange = 10)
+int[,] FillMatrixB(int rowsCount, int columnsCount, int leftRange = -99, int rightRange = 100)
 {
     int[,] matrixB = new int[rowsCount, columnsCount];
     Random rand = new Random();
